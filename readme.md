@@ -1,3 +1,9 @@
+# Explique com suas palavras o funcionamento do models, controller e fale  sobre endpoints no projeto.
+Em models temos as consultas SQL para cada tabela do database, por exemplo; No arquivo aluno.js podemos interagir com a tabela alunos.
+Os controllers recebem a requisição vinda do usuário, (req) e mandam a resposta para os models (res).
+
+-------------------
+
 # Boilerplate MVC em Node.js com PostgreSQL
 
 Este projeto é um boilerplate básico para uma aplicação Node.js seguindo o padrão MVC (Model-View-Controller), utilizando PostgreSQL como banco de dados.
