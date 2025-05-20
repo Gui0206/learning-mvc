@@ -1,3 +1,22 @@
+# Explique com suas palavras o funcionamento do models, controller e fale sobre endpoints no projeto.
+
+#### Explique com suas palavras o papel de cada camada da arquitetura MVC usada neste projeto. Como o Model, o Controller e a View interagem entre si?
+
+Primeiro explicarei as views: Elas são o que guardam o código HTML, que é a interface visível para o usuário.  
+Quando apertamos um botão na página, ele é recebido por uma rota, e o controller cria a requisição para o model.  
+Já no model uma query SQL é usada para interagir com o banco de dados.
+
+#### Como ocorre o envio e o recebimento de dados no formato JSON neste projeto? Cite uma rota que responde em JSON e explique seu funcionamento.
+
+`router.post('/edit/:id', controller.update);`  
+Essa rota envia um JSON com as informações da requisição, e o ID desejado.
+
+#### Qual a importância de usar HTML básico com formulários e tabelas para organizar e manipular dados no navegador? Por que esse tipo de estrutura ainda é útil em projetos back-end com Node.js?
+
+Pois é com ele que criamos a estrutura de interface interagível para o usuário.
+
+
+
 # Explique com suas palavras o funcionamento do models, controller e fale  sobre endpoints no projeto.
 Em models temos as consultas SQL para cada tabela do database, por exemplo; No arquivo aluno.js podemos interagir com a tabela alunos.
 Os controllers recebem a requisição vinda do usuário, (req) e mandam a resposta para os models (res).
